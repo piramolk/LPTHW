@@ -1,0 +1,17 @@
+print "How old are you?",
+age = raw_input()
+print "How tall are you?",
+height = raw_input()
+print "How much do you weight?"
+weight = raw_input()
+
+print "So, you're %r old, %r tall and %r heavy." %( age, height, weight)
+
+
+#what does raw_input()do?
+#Python also has a feature which lets you interact with the outside world to get input.  The raw_input() function waits for the user to type some input and press return.  It then gets whatever was typed.
+
+# if u type 5"6, the string becomes '', if 5'6, ""
+# What’s the difference between input() and raw_input()?
+# The input() function will try to convert things you enter as if they were Python code, but it has
+# security problems so you should avoid it.
