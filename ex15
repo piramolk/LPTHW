@@ -1,0 +1,37 @@
+#importing arguments from the system, basically creating variables
+from sys import argv
+
+#assigning variables to argv
+script, filename = argv
+
+#the text generated comes from opening the file
+txt = open(filename)
+
+#prints out the filename from the input
+print "Here's your file %r:" % filename
+
+#prints out the text from the file
+print txt.read()
+
+#asks for input
+print "Type the filename again:"
+
+#asks for hte file name again so it can reopen that file
+file_again = raw_input("> ")
+
+#creates a var called text again . the text comes from the file that is opened
+txt_again = open(file_again)
+
+#the text from the reopened file is now printed
+print txt_again.read()
+
+#what is hard coding
+#putting info that shuld come from the user as a string right in our program
+#why not? we want it to load other files later
+#soln: use argv and raw_input
+
+
+#what does txt= open(filename) do?
+#It actually makes something called a “file object.” You can think of it like an old
+#tape drive that you saw on mainframe computers in the 1950s or even like a DVD player from
+#today. You can move around inside them, and then “read” them, but the fi le is not the contents.
