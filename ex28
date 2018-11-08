@@ -1,0 +1,42 @@
+1. True and True # true
+		true
+2. False and True #false
+		false
+3. 1 == 1 and 2 == 1 # t & f = f
+		false
+4. "test" == "test" #t
+		true
+5. 1 == 1 or 2 != 1 #t || t = t
+		true
+6. True and 1 == 1 #t & t = t
+		true
+7. False and 0 != 0 # f & f = f 
+		false 
+8. True or 1 == 1 # t or t = t
+		true
+9. "test" == "testing" # f
+		false
+10. 1 != 0 and 2 == 1 # t&f = f
+		false
+11. "test" != "testing" #t
+		true
+12. "test" == 1 #f
+		false
+13. not (True and False) # !(f) = t
+		true
+14. not (1 == 1 and 0 != 1) # !(t & t) = f
+		false
+15. not (10 == 1 or 1000 == 1000) # !( f || t) = !t = f
+		false
+	
+16. not (1 != 10 or 3 == 4) # !(t || f) = !t =f
+		false
+17. not ("testing" == "testing" and "Zed" == "Cool Guy") # !(t & f) = !f = t
+		true
+18. 1 == 1 and not ("testing" == 1 or 1 == 0) # t & !(f|| f) = t&t = t
+		true
+19. "chunky" == "bacon" and not (3 == 4 or 3 == 3) # f & !(f||t) = f & !t = f&f = f
+		false
+
+20. 3 == 3 and not ("testing" == "testing" or "Python" == "Fun") # t & !(t||f) = t& !t = t&f =f
+		false
