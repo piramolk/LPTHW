@@ -1,0 +1,36 @@
+from sys import argv   
+
+script, first, second, third = argv
+
+print "This script is called: ", script
+print "Your first variable is: ", first
+print "Your second variable is: ", second
+print "Your third variable is: ", third
+
+
+#in line 1, you are importing.This is how u add modules/features to script from python feature set
+#in this case u must explicitly tell python what u plan to use
+
+#argv is the argument variable. this var holds the arg u pass to ur python script when u run it
+#in line 3, we are unpacking argv so instead of holding all arg we are assigning it to four variables
+
+
+#when exe u must type python ex13.py first 2nd 3rd
+#u MUST pass 3 command line arguments
+
+#if u fewer arg and pass more arg than needed it'll just ignore 
+#if ur script has more arg than u give it, error will occur
+
+#can replace script/first/second with raw_input()
+
+
+#Whats the difference between argv and rawinput()?
+#The difference has to do with where the user is required to give input. If they give your script
+#inputs on the command line, then you use argv. If you want them to input using the keyboard
+#while the script is running, then use raw_input().
+
+
+
+#Are the command line arguments strings?
+#Yes, they come in as strings, even if you typed numbers on the command line. Use int() to convert
+#them just like with raw_input().
