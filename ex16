@@ -1,0 +1,47 @@
+from sys import argv
+
+script, filename = argv
+
+print "We're going to erase %r." %  filename
+print "If you don't want that, hit CTRL-C (^C)"
+print "If you do want that, hit RETURN"
+
+raw_input("?")
+
+print "Opening the file..."
+target = open(filename, 'w')
+
+print "Truncating the file. Goodbye!"
+target.truncate()
+
+print "Now I'm going to ask you for 3 lines."
+
+line1 = raw_input("line 1: ")
+line2 = raw_input("line 2: ")
+line3 = raw_input("line 3: ")
+
+print "I'm going to write these to the file."
+
+target.write(line1)
+target.write("\n")
+target.write(line2)
+target.write("\n")
+target.write(line3)
+target.write("\n")
+
+print "And finally, we close it."
+target.close()
+
+
+#why use 'w'
+#It’s really just a string with a character in it for the kind of mode for the fi le. If you use 'w', then
+#you’re saying “open this fi le in ‘write’ mode”—hence the 'w' character. There’s also 'r' for
+#“read,” 'a' for append, and modifi ers on these.
+
+#What are the modifi ers to the fi le modes we can use?
+#The most important one to know for now is the + modifi er, so you can do 'w+', 'r+', and 'a+'.
+#This will open the fi le in both read and write mode and, depending on the character used, position
+#the fi le in different ways.
+
+#Does just doing open(filename) open it in 'r' (read) mode?
+#Yes, that’s the default for the open() function.
