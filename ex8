@@ -1,0 +1,25 @@
+formatter = "%r %r %r %r"
+
+print formatter % (1, 2, 3, 4)
+print formatter % ("one", "two", "three" , "four")
+print formatter % (True, False, False, True)
+print formatter % (formatter, formatter, formatter, formatter)
+print formatter %(
+	"I had this thing.",
+	"That you could type up right.",
+	"But it didn't sing. ",
+	"So I said goodnight."
+)
+
+
+#Why does %r sometimes print things with single- quotes when I wrote them with double- quotes?
+#Python is going to print the strings in the most effi cient way it can, not replicate exactly the way
+#you wrote them. This is perfectly fi ne since %r is used for debugging and inspection, so it’s not
+#necessary that it be pretty.
+
+
+#Study Drills
+#1. Do your checks of your work, write down your mistakes, and try not to make them on
+#the next exercise.
+#2. Notice that the last line of output uses both single- quotes and double- quotes for individual
+#pieces. Why do you think that is?
